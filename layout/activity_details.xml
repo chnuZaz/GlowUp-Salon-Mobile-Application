@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg8"
+    tools:context=".Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/Topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hair Cut &amp; Styling"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textAlignment="center">
+
+    </TextView>
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Topic"
+            app:shapeAppearanceOverlay="@drawable/photoframe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textAlignment="viewEnd"
+        />
+    <TextView
+        android:id="@+id/priceTV"
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="$25"
+        android:textAlignment="viewEnd"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="(Per Person)"
+        android:layout_marginEnd="50dp"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptiontopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25dp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linear1"
+        />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptiontopic"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:text="Your face is an expressive canvass that shows experience and emotion. At one of the best salons around, our palette holds nourishing treatments, which enhances, emphasizes beauty, youth and color for your body. Before any facial, our professional esthetician will give you a consolidation and work from there You won’t believe the difference!"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/benifittopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benifits"
+            android:layout_marginTop="20sp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/description"
+            />
+
+        <TextView
+            android:id="@+id/benifit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/benifittopic"
+            android:layout_margin="5dp"
+            android:layout_marginTop="-78dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:text="Your face is an expressive canvass that shows experience and emotion. At one of the best salons around, our palette holds nourishing treatments, which enhances, emphasizes beauty, youth and color for your body. Before any facial, our professional esthetician will give you a consolidation and work from there You won’t believe the difference!"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

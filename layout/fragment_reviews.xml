@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/cusreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Reviews"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_below="@+id/cusreview"
+            android:padding="16dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40dp"
+            android:src="@drawable/add"
+            android:backgroundTint="@color/end_color"
+            android:tint="@color/white"
+            />
+
+    </RelativeLayout>
+
+

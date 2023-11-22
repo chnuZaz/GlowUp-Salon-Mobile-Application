@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg7"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/photoframe"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write Your Own Reviews"
+        android:textColor="#FEFEFE"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Your Name"
+        android:backgroundTint="#FEFEFE"
+        android:textColor="#FEFEFE"/>
+
+    <EditText
+        android:id="@+id/edtReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Write your review"
+        android:backgroundTint="#FEFEFE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/beforePictureBtn"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/photoframe">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/imgBefore"></ImageView>
+
+            <ImageView
+                android:id="@+id/ivBeforePicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBefore"
+                android:tint="#FEFEFE"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/baseline_add_photo_alternate_24" />
+
+            <!-- Add Button for Before Picture -->
+            <TextView
+                android:id="@+id/btnSelectBeforePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivBeforePicture"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:text="Select Before Picture"
+                android:textColor="#FEFEFE"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/afterPictureBtn"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/photoframe">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/imgAfter"/>
+
+            <ImageView
+                android:id="@+id/ivafterPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/imgAfter"
+                android:tint="#FEFEFE"
+                android:src="@drawable/baseline_add_photo_alternate_24" />
+
+            <!-- Add Button for Before Picture -->
+            <TextView
+                android:id="@+id/btnSelectAfterPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivafterPicture"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:text="Select After Picture"
+                android:textColor="#FEFEFE"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitReview"
+        android:layout_width="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEFEFE"
+        android:textColor="#AD7C57"
+        android:layout_gravity="center"
+        android:text="Submit" />
+    </LinearLayout>
+
+</LinearLayout>

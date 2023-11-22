@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppontmentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvSelectedDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Date and Time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSelectedDateTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Book Slot"/>
+
+        <ListView
+            android:id="@+id/listViewBookings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnBook"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
